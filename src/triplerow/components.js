@@ -21,7 +21,6 @@ export default (editor, opts = {}) => {
       }
       return divComponents;
     };
-
     domc.addType("CUSTOM-ROW-COMPONENT", {
       model: {
         defaults: {
