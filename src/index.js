@@ -17,7 +17,10 @@ import divideLineBlocks from "./divideline/blocks";
 import tripleRowBlocks from "./triplerow/blocks";
 import tripleRowComponent from "./triplerow/components";
 import en from "./locale/en";
-
+import cardBlocks from "./Card/block";
+import cardComponents from "./Card/components";
+import navbarBlocks from "./Navbar/block";
+import navbarComponent from "./Navbar/components";
 export default (editor, opts = {}) => {
   const options = {
     ...{
@@ -37,6 +40,8 @@ export default (editor, opts = {}) => {
   priceComponents(editor, options);
   divideLineComponents(editor, options);
   tripleRowComponent(editor, options);
+  cardComponents(editor, options);
+  navbarComponent(editor, options);
   // Add blocks
 
   singleRowBlocks(editor, options);
@@ -47,6 +52,8 @@ export default (editor, opts = {}) => {
   priceBlocks(editor, options);
   divideLineBlocks(editor, options);
   tripleRowBlocks(editor, options);
+  cardBlocks(editor, options);
+  navbarBlocks(editor, options);
   // loadBlocks(editor, options);
   // loadComponents(editor, options);
 
