@@ -1,5 +1,3 @@
-import { model } from "mongoose";
-
 export default (editor, opts = {}) => {
   const doc = editor.DomComponents;
 
