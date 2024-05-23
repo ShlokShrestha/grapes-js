@@ -63,7 +63,7 @@ export default (editor, opts = {}) => {
             height: auto;
             padding:10px;
             background-color: white;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 6px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 4px;
         }
         .css-cmp-sub{
             display:flex;
