@@ -330,13 +330,12 @@ export default (editor, opts = {}) => {
         padding: 15px;
         border-radius: 10px;
         border: 1px solid ${borderColor};
-
        }
        .cmp-css-cartsummary{
         margin-bottom: 40px;
        }
 
-       .cmp-css-cartTitle{
+       .cmp-css-cartTitle, .cmp-css-orderTotal{
         font-size: 20px;
         font-weight: 600;
        }

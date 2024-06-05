@@ -29,7 +29,17 @@ import categoryComponent from "./Categories/components";
 import categoryBlock from "./Categories/blocks";
 import footerBlock from "./footer/blocks";
 import footerComponent from "./footer/components";
+import paymentBlock from "./payment/block";
+import paymentComponent from "./payment/components";
+import productDetailBlock from "./productdetail/block";
+import productDetailComponent from "./productdetail/components";
+import pickUpDetailBlock from "./pickupdetails/block";
+import pickUpDetailComponent from "./pickupdetails/components";
+import deliveryDetailBlock from "./deliveryDetail/block";
+import deliveryDetailComponent from "./deliveryDetail/components";
 
+import pickupBlock from "./pickup/block";
+import pickupComponent from "./pickup/components";
 export default (editor, opts = {}) => {
   const options = {
     ...{
@@ -56,6 +66,14 @@ export default (editor, opts = {}) => {
   footerComponent(editor, options);
   navbarComponent2(editor, options);
   cartSummaryComponents(editor, options);
+  paymentComponent(editor, options);
+  productDetailComponent(editor, options);
+  pickUpDetailComponent(editor, options);
+  deliveryDetailComponent(editor, options);
+
+  pickupComponent(editor, options);
+
+
   // Add blocks
 
   // singleRowBlocks(editor, options);
@@ -73,6 +91,13 @@ export default (editor, opts = {}) => {
   footerBlock(editor, options);
   navbarBlocks2(editor, options);
   cartSummaryBlock(editor, options);
+  paymentBlock(editor, options);
+  productDetailBlock(editor, options);
+  pickUpDetailBlock(editor, options);
+  deliveryDetailBlock(editor, options);
+
+
+  pickupBlock(editor, options);
   // loadBlocks(editor, options);
   // loadComponents(editor, options);
 
